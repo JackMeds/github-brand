@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/Notesharea-server",
+  "displayName": "Notesharea / API",
+  "wordmark": "Notesharea / API",
+  "localName": "笔记分享 / 服务端",
+  "number": "09",
+  "category": "notes backend",
+  "kind": "modules",
+  "accent": "#397B86",
+  "accentDark": "#8AD0DC",
+  "tagline": {
+    "en": "The data and sessions behind a notes community."
+  },
+  "tags": [
+    "koa",
+    "mysql",
+    "redis"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/Notesharea-server"
+  },
+  "pilot": false
+}

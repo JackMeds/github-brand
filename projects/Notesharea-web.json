@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/Notesharea-web",
+  "displayName": "Notesharea / Web",
+  "wordmark": "Notesharea / Web",
+  "localName": "笔记分享 / 用户前端",
+  "number": "11",
+  "category": "notes frontend",
+  "kind": "modules",
+  "accent": "#397B86",
+  "accentDark": "#8AD0DC",
+  "tagline": {
+    "en": "A place to read, write and discuss notes."
+  },
+  "tags": [
+    "vue",
+    "vite",
+    "notes"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/Notesharea-web"
+  },
+  "pilot": false
+}

@@ -1,0 +1,28 @@
+name: Check repository brand
+on:
+  workflow_call:
+    inputs:
+      toolkit-ref:
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: project
+      - uses: actions/checkout@v4
+        with:
+          repository: JackMeds/github-brand
+          ref: ${{ inputs.toolkit-ref }}
+          path: brand-toolkit
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: brand-toolkit/package-lock.json
+      - run: npm ci --prefix brand-toolkit
+      - run: node brand-toolkit/scripts/brand.mjs check --repo project

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/hideplayerheadblock",
+  "displayName": "Hide Player Heads",
+  "wordmark": "Hide Player Heads",
+  "localName": "玩家头颅隐藏 / Minecraft 客户端模组",
+  "number": "07",
+  "category": "minecraft mod",
+  "kind": "modules",
+  "accent": "#526D3A",
+  "accentDark": "#B3CA92",
+  "tagline": {
+    "en": "Hide player-head blocks from your view."
+  },
+  "tags": [
+    "minecraft 1.20.1",
+    "forge",
+    "source incomplete"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/hideplayerheadblock"
+  },
+  "pilot": false
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/sizhu-astro-ai",
+  "number": "02",
+  "wordmark": "MingXu",
+  "displayName": "MingXu / 命序",
+  "localName": "命序 / 人与 AI 的确定性排盘工作台",
+  "kind": "chart",
+  "category": "calculation workspace",
+  "accent": "#BA4238",
+  "accentDark": "#F2A193",
+  "tagline": {
+    "en": "Compute the chart. Keep the interpretation yours.",
+    "zh": "八字、紫微、六壬与明确的时间语义。"
+  },
+  "tags": [
+    "deterministic",
+    "human x AI",
+    "browser workspace"
+  ],
+  "readmes": [
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "links": {
+    "demo": "https://astrocopy.jackmeds.top/",
+    "source": "https://github.com/JackMeds/sizhu-astro-ai"
+  },
+  "pilot": true,
+  "proof": "assets/brand/product-proof.png"
+}
