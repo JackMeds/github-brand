@@ -12,11 +12,10 @@ const safeRelative = (s) => typeof s === 'string' && s.length > 0 && !path.isAbs
 
 export function validateManifest(m) {
   if (!m || m.schemaVersion !== 1) throw new Error('project-brand.json requires schemaVersion: 1');
-  for (const key of ['repo', 'displayName', 'wordmark', 'number', 'category', 'kind', 'accent', 'accentDark']) {
+  for (const key of ['repo', 'displayName', 'wordmark', 'category', 'kind', 'accent', 'accentDark']) {
     if (typeof m[key] !== 'string' || !m[key].trim()) throw new Error('Missing manifest field: ' + key);
   }
   if (!/^JackMeds\/[A-Za-z0-9._-]+$/.test(m.repo)) throw new Error('Expected a JackMeds repository');
-  if (!/^\d{2}$/.test(m.number)) throw new Error('number must be a two-digit project identifier');
   if (!['profile', 'voice', 'chart', 'pipeline', 'memory', 'modules'].includes(m.kind)) throw new Error('Unknown specimen kind');
   for (const key of ['accent', 'accentDark']) if (!/^#[0-9a-f]{6}$/i.test(m[key])) throw new Error('Invalid color: ' + key);
   if (!m.tagline || typeof m.tagline.en !== 'string' || !m.tagline.en.trim()) throw new Error('English tagline required');

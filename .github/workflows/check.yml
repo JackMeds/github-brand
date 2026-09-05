@@ -26,3 +26,6 @@ jobs:
           cache-dependency-path: brand-toolkit/package-lock.json
       - run: npm ci --prefix brand-toolkit
       - run: node brand-toolkit/scripts/brand.mjs check --repo project
+      - name: Check profile API snapshot and cards without network access
+        if: hashFiles('project/profile-widgets.json') != ''
+        run: node brand-toolkit/scripts/profile.mjs check project

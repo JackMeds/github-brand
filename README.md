@@ -13,6 +13,7 @@ JackMeds 的 GitHub 品牌工作区。Functional Specimen 将网页听读、确�
 - Original JM avatar, project-specific motifs and accessible Markdown headers.
 - Real fictional-data product screenshots with capture provenance.
 - Deterministic generation, read-only checks, and lightweight reusable CI.
+- API-backed profile project cards with light/dark rendering, timestamps and text alternatives.
 - Public README/settings rollback baselines; original avatar bytes stay in a local ignored backup.
 
 ![Flowloud specimen preview](assets/examples/flowloud.png)
@@ -27,6 +28,8 @@ Requires Node.js 24. Install dependencies here once; target repositories need no
     npm test
 
 Each target holds project-brand.json. Only marked README header regions and assets/brand generated files are rewritten; product copy and screenshot evidence remain separate.
+
+For the profile, `node scripts/profile.mjs refresh /path/to/profile` collects public GitHub repository data and refreshes its separately marked card region. `node scripts/profile.mjs check /path/to/profile` checks saved data and cards offline. The profile's reviewed workflow schedules collection every six hours after merging to its default branch; it does not require a personal token or hosted service.
 
 The initial inputs in projects/ cover the profile, four pilots and seven historical repositories. A standalone clone can generate any target repository. To build the complete local review gallery, place the target checkouts in a sibling github-brand-workspace directory, then run npm run preview.
 

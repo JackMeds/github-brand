@@ -18,7 +18,7 @@ export const palettes = {
   dark: { paper: '#0F1217', ink: '#EDF0F5', muted: '#A6AFBD', rule: '#363D46', blue: '#91ACFF' }
 };
 
-function label(text, x, y, size, color, role = 'display', maxWidth = Infinity) {
+export function label(text, x, y, size, color, role = 'display', maxWidth = Infinity) {
   const face = font(role);
   for (const glyph of face.stringToGlyphs(text)) {
     if (glyph.index === 0) throw new Error('Font missing glyph in: ' + text);
@@ -108,7 +108,7 @@ function specimen(kind, accent, p) {
     for (let i = 0; i < 3; i++) {
       const x = -120 + i * 55, y = -106 + i * 62;
       out.push(rect(x, y, 150, 90, p.paper, 'stroke="' + (i === 1 ? accent : p.rule) + '" stroke-width="2"'));
-      out.push(rect(x, y, 6, 90, accent), label('0' + (i + 1), x + 22, y + 40, 23, p.ink, 'mono'));
+      out.push(rect(x, y, 6, 90, accent), line(x + 22, y + 28, x + 62, y + 28, p.ink, 4));
       out.push(line(x + 22, y + 60, x + 125, y + 60, p.rule, 3));
     }
   }
@@ -128,9 +128,8 @@ export function renderBanner(m, theme = 'light', social = false) {
     rect(0, 0, w, h, p.paper), rect(0, 0, 8, h, accent),
     jmMark(left, 28, 30, p.ink),
     label('JACKMEDS / SOFTWARE LAB', 103, 49, 13, p.muted, 'mono'),
-    label(m.number + ' / ' + m.category.toUpperCase(), social ? 859 : 831, 49, 12, p.muted, 'mono', social ? 367 : 315),
+    label(m.category.toUpperCase(), social ? 859 : 831, 49, 12, p.muted, 'mono', social ? 367 : 315),
     line(left, 72, w - left, 72, p.rule),
-    '<g opacity=".045">' + label(m.number, social ? -40 : -24, h + 46, social ? 490 : 320, p.ink, 'mono') + '</g>',
     label(m.wordmark || m.displayName, left, titleY, social ? 95 : 82, p.ink, 'display', social ? 710 : 725)
   ];
   if (m.localName) parts.push(label(m.localName, left + 3, titleY + (social ? 61 : 48), social ? 34 : 27, accent, 'zh', 695));

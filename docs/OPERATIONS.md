@@ -8,7 +8,7 @@ Run npm run brand -- --repo /absolute/path/to/project to generate the approved b
 
 Run npm run brand:check -- --repo /absolute/path/to/project for a read-only drift, proof-image and local-link check. A missing or changed asset fails validation. Remote websites/settings are separate release checks, not silently treated as successful by CI.
 
-project-brand.json records the source repository, display name, local name, project index, motif, colors, bilingual tagline, tags, README paths and verified public links. pilot projects require a product-proof.png. The toolkit rejects unsafe relative paths, duplicate markers and symlink outputs.
+project-brand.json records the source repository, display name, local name, motif, colors, bilingual tagline, tags, README paths and verified public links. Project order is not part of the artwork. pilot projects require a product-proof.png. The toolkit rejects unsafe relative paths, duplicate markers and symlink outputs.
 
 The projects directory contains the initial reviewed inputs. Once adopted, each target repository's manifest is authoritative. Copy intentional manifest edits back to this catalogue when changing account-level presentation.
 

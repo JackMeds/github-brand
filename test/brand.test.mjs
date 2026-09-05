@@ -49,6 +49,14 @@ test('waveform output tolerates cross-platform transcendental last-bit differenc
   } finally { Math.sin = original; }
   assert.doesNotMatch(expected, /(?:x1|x2|y1|y2)="[-\d]+\.\d{4,}"/);
 });
+test('artwork does not depend on project sequence numbers', () => {
+  const {number, ...withoutNumber} = m;
+  assert.equal(validateManifest(withoutNumber), withoutNumber);
+  for (const theme of ['light', 'dark']) for (const social of [false, true]) {
+    assert.equal(renderBanner({...m, number:'01'}, theme, social), renderBanner({...m, number:'99'}, theme, social));
+    assert.equal(renderBanner(m, theme, social), renderBanner(withoutNumber, theme, social));
+  }
+});
 test('generate/check preserves prose and detects drift without writing', async () => {
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'jackmeds-brand-test-'));
   try {
