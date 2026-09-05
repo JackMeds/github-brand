@@ -32,7 +32,7 @@ The initial inputs in projects/ cover the profile, four pilots and seven histori
 
 ## Review and publication
 
-[Design system](DESIGN.md) · [Operating guide](docs/OPERATIONS.md) · [Repository audit](docs/REPOSITORY-AUDIT.md) · [Prepared metadata](release/metadata.json)
+[Delivery and draft PRs](docs/DELIVERY.md) · [Design system](DESIGN.md) · [Operating guide](docs/OPERATIONS.md) · [Repository audit](docs/REPOSITORY-AUDIT.md) · [Prepared metadata](release/metadata.json)
 
 All migrations are reviewed through individual pull requests. Account avatar/Pins/social settings and MingXu's repository/domain switch follow the agreed review milestone. Generating an image does not upload it to GitHub's Social preview setting.
 
