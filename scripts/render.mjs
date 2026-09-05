@@ -28,7 +28,10 @@ function label(text, x, y, size, color, role = 'display', maxWidth = Infinity) {
   return '<path fill="' + color + '" d="' + face.getPath(text, x, y, fitted).toPathData(2) + '"/>';
 }
 function line(x1, y1, x2, y2, color, width = 1, extra = '') {
-  return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + color + '" stroke-width="' + width + '" ' + extra + '/>';
+  // Transcendental math differs in its last bits across CPU/libm combinations.
+  // SVG coordinates are an output format: round before serializing, not after.
+  const coordinate = value => Number(value.toFixed(3));
+  return '<line x1="' + coordinate(x1) + '" y1="' + coordinate(y1) + '" x2="' + coordinate(x2) + '" y2="' + coordinate(y2) + '" stroke="' + color + '" stroke-width="' + coordinate(width) + '" ' + extra + '/>';
 }
 function rect(x, y, w, h, color, extra = '') {
   return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" fill="' + color + '" ' + extra + '/>';

@@ -39,6 +39,16 @@ test('banners are deterministic outlined SVGs with exact export dimensions', () 
   assert.ok(social.length < 1_000_000);
   assert.notEqual(renderBanner(m, 'dark'), a);
 });
+test('waveform output tolerates cross-platform transcendental last-bit differences', () => {
+  const voice = {...m, kind:'voice'};
+  const expected = renderBanner(voice);
+  const original = Math.sin;
+  try {
+    Math.sin = value => original(value) + 1e-15;
+    assert.equal(renderBanner(voice), expected);
+  } finally { Math.sin = original; }
+  assert.doesNotMatch(expected, /(?:x1|x2|y1|y2)="[-\d]+\.\d{4,}"/);
+});
 test('generate/check preserves prose and detects drift without writing', async () => {
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'jackmeds-brand-test-'));
   try {
