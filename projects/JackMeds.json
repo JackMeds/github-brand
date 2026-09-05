@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/JackMeds",
+  "wordmark": "JackMeds",
+  "displayName": "JackMeds",
+  "localName": "把不寻常的想法，做成真正能用的软件。",
+  "kind": "profile",
+  "category": "independent software",
+  "accent": "#2E5BFF",
+  "accentDark": "#91ACFF",
+  "tagline": {
+    "en": "Unusual ideas. Useful software.",
+    "zh": "AI、个人工具与有意思的实验。"
+  },
+  "tags": [
+    "local-first",
+    "human x AI",
+    "experiments"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "projects": "https://github.com/JackMeds?tab=repositories"
+  },
+  "pilot": true
+}

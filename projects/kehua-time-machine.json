@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/kehua-time-machine",
+  "displayName": "Kehua Time Machine",
+  "wordmark": "Kehua Time Machine",
+  "localName": "可话时光机 / 静态回忆存档",
+  "category": "static archive",
+  "kind": "modules",
+  "accent": "#637446",
+  "accentDark": "#BDCA9B",
+  "tagline": {
+    "en": "An earlier home for saved memories."
+  },
+  "tags": [
+    "static build",
+    "archive browser",
+    "legacy"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/kehua-time-machine"
+  },
+  "pilot": false
+}

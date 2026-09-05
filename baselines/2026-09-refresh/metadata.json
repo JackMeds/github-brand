@@ -1,0 +1,262 @@
+{
+  "capturedAt": "2026-09-04T23:42:37.821Z",
+  "profile": {
+    "name": "JackMeds",
+    "bio": "just a little nerb\r\nLiaoning Technical University",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38741783?v=4",
+    "blog": "",
+    "company": "Liaoning Technical University",
+    "location": "China"
+  },
+  "pins": [
+    {
+      "nameWithOwner": "Kiwi233/Translation-of-GTNH",
+      "url": "https://github.com/Kiwi233/Translation-of-GTNH"
+    },
+    {
+      "nameWithOwner": "ProgregssTeam/GregFactory-Sky",
+      "url": "https://github.com/ProgregssTeam/GregFactory-Sky"
+    },
+    {
+      "nameWithOwner": "JackMeds/kehua-memory-garden",
+      "url": "https://github.com/JackMeds/kehua-memory-garden"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "BiliDigest",
+      "full_name": "JackMeds/BiliDigest",
+      "description": "Bilibili Watch Later and Favorites digest exporter for local agent notes",
+      "homepage": "",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "ai-agent",
+        "bili-digest",
+        "bilibili",
+        "codex",
+        "favorites",
+        "knowledge-graph",
+        "productivity",
+        "python",
+        "subtitles",
+        "watch-later"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/BiliDigest",
+      "license": "GPL-3.0",
+      "baselineCommit": "3bfa0a9d16182cc32fb919d18f69d2bec1f36f5e"
+    },
+    {
+      "name": "echotrace",
+      "full_name": "JackMeds/echotrace",
+      "description": "EchoTrace 是一个本地、安全的微信聊天记录导出、分析与年度报告生成工具 | EchoTrace is a local, secure tool for exporting, analyzing, and generating annual reports of WeChat chat records",
+      "homepage": "",
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/echotrace",
+      "license": "MIT",
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    },
+    {
+      "name": "flowloud",
+      "full_name": "JackMeds/flowloud",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/flowloud",
+      "license": null,
+      "baselineCommit": "05be31b962c9228eea740c3c7b480480c2a9c2d3"
+    },
+    {
+      "name": "HaoXing",
+      "full_name": "JackMeds/HaoXing",
+      "description": "Adapting a novel into a multi-character audio drama.",
+      "homepage": "",
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/HaoXing",
+      "license": null,
+      "baselineCommit": "7c8ff54a08d55ecda1fb87654cdfe5a47c83d6b6"
+    },
+    {
+      "name": "HaoXing-BMS",
+      "full_name": "JackMeds/HaoXing-BMS",
+      "description": "HaoXing小说app后台管理系统",
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": true,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/HaoXing-BMS",
+      "license": null,
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    },
+    {
+      "name": "HaoXing-server",
+      "full_name": "JackMeds/HaoXing-server",
+      "description": "HaoXing小说app后端",
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": true,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/HaoXing-server",
+      "license": null,
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    },
+    {
+      "name": "hideplayerheadblock",
+      "full_name": "JackMeds/hideplayerheadblock",
+      "description": "A Minecraft mod for hiding the Player Head block.",
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/hideplayerheadblock",
+      "license": "NOASSERTION",
+      "baselineCommit": "fd0465dbf32b37ab2e5c0d96a704af9e6faa3857"
+    },
+    {
+      "name": "JackMeds",
+      "full_name": "JackMeds/JackMeds",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/JackMeds",
+      "license": null,
+      "baselineCommit": "14436ff4b0f75add0c6da8345903543de0183b64"
+    },
+    {
+      "name": "kehua-memory-garden",
+      "full_name": "JackMeds/kehua-memory-garden",
+      "description": "可话花园：一个纯前端的可话回忆静态浏览站点",
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/kehua-memory-garden",
+      "license": null,
+      "baselineCommit": "fe6547ba3a009109cf527eda961e3d6d8f2b825f"
+    },
+    {
+      "name": "kehua-time-machine",
+      "full_name": "JackMeds/kehua-time-machine",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "gh-pages",
+      "html_url": "https://github.com/JackMeds/kehua-time-machine",
+      "license": null,
+      "baselineCommit": "7723ac5ead0f01bf4590840dfb8d63e87b280b4f",
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    },
+    {
+      "name": "MakeSoundBook",
+      "full_name": "JackMeds/MakeSoundBook",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/MakeSoundBook",
+      "license": null,
+      "baselineCommit": "9a0c138acfb9375f3a4c3bc122e24e25128634ef"
+    },
+    {
+      "name": "Notesharea-admin",
+      "full_name": "JackMeds/Notesharea-admin",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/Notesharea-admin",
+      "license": null,
+      "baselineCommit": "deea2e1b9ce8f79a50fcdc79a46d31df6b43c658"
+    },
+    {
+      "name": "Notesharea-server",
+      "full_name": "JackMeds/Notesharea-server",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/Notesharea-server",
+      "license": null,
+      "baselineCommit": "35a5910f3633aacda34d10392d2a9bb3507b09f6"
+    },
+    {
+      "name": "Notesharea-web",
+      "full_name": "JackMeds/Notesharea-web",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/Notesharea-web",
+      "license": null,
+      "baselineCommit": "345f199b4854fea7014e5dd91ecd868a0ee5462b"
+    },
+    {
+      "name": "open-webui",
+      "full_name": "JackMeds/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "homepage": "https://openwebui.com",
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/open-webui",
+      "license": "NOASSERTION",
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    },
+    {
+      "name": "sizhu-astro-ai",
+      "full_name": "JackMeds/sizhu-astro-ai",
+      "description": null,
+      "homepage": null,
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/sizhu-astro-ai",
+      "license": "GPL-3.0",
+      "baselineCommit": "a4c31f0ac5334b634484b176425f97b18b89c585"
+    },
+    {
+      "name": "wx_key",
+      "full_name": "JackMeds/wx_key",
+      "description": "获取微信4.0版本以上数据库密钥和图片密钥的工具 | A tool for obtaining database keys and image keys for WeChat versions 4.0 and above",
+      "homepage": "",
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "html_url": "https://github.com/JackMeds/wx_key",
+      "license": "MIT",
+      "readmeSnapshot": "not available locally; fork/archived repositories are read-only"
+    }
+  ]
+}

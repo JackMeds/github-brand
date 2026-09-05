@@ -1,0 +1,175 @@
+{
+  "status": "prepared-not-applied",
+  "profile": {
+    "bio": "Experimental product builder · Local-first tools · Human × AI",
+    "avatar": "JackMeds/assets/brand/avatar.png",
+    "pins": [
+      "JackMeds/flowloud",
+      "JackMeds/sizhu-astro-ai",
+      "JackMeds/BiliDigest",
+      "JackMeds/kehua-memory-garden"
+    ]
+  },
+  "repositories": [
+    {
+      "repo": "JackMeds/flowloud",
+      "description": "本地优先的网页听读、作者配音、OCR 与翻译扩展 | A browser reading and speech companion.",
+      "homepage": "",
+      "topics": [
+        "browser-extension",
+        "text-to-speech",
+        "local-first",
+        "accessibility",
+        "ocr",
+        "translation",
+        "chrome-extension",
+        "edge-extension"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/sizhu-astro-ai",
+      "description": "命序 MingXu：面向人与 AI Agent 的确定性八字、紫微、六壬与时间计算工作台",
+      "homepage": "https://astrocopy.jackmeds.top/",
+      "topics": [
+        "mingxu",
+        "bazi",
+        "ziwei",
+        "daliuren",
+        "chinese-metaphysics",
+        "webmcp",
+        "mcp",
+        "ai-agent",
+        "typescript",
+        "local-first"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/BiliDigest",
+      "description": "Bilibili Watch Later and Favorites digest exporter for local agent notes",
+      "homepage": "",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "ai-agent",
+        "bili-digest",
+        "bilibili",
+        "codex",
+        "favorites",
+        "knowledge-graph",
+        "productivity",
+        "python",
+        "subtitles",
+        "watch-later",
+        "local-first"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/kehua-memory-garden",
+      "description": "可话花园：在浏览器里重新翻看自己的可话记录、图片与视频",
+      "homepage": "https://jackmeds.github.io/kehua-memory-garden/",
+      "topics": [
+        "kehua",
+        "local-first",
+        "personal-archive",
+        "memories",
+        "react",
+        "static-site",
+        "github-pages"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/MakeSoundBook",
+      "description": "按文本选区分配声音、合成与混音的 Electron 有声小说工具",
+      "homepage": "",
+      "topics": [
+        "electron",
+        "vue",
+        "text-to-speech",
+        "audiobook",
+        "ffmpeg"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/HaoXing",
+      "description": "连接小说对白识别、多声音合成与作品播放的 Web 全栈实验",
+      "homepage": "",
+      "topics": [
+        "vue",
+        "express",
+        "text-to-speech",
+        "audiobook",
+        "mysql"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/hideplayerheadblock",
+      "description": "A Minecraft client mod for hiding player-head blocks; current checkout contains the project scaffold.",
+      "homepage": "",
+      "topics": [
+        "minecraft",
+        "minecraft-forge",
+        "client-mod"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/kehua-time-machine",
+      "description": "可话回忆查看器的历史静态构建与浏览入口",
+      "homepage": "",
+      "topics": [
+        "kehua",
+        "static-site",
+        "memory-archive"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/Notesharea-server",
+      "description": "为笔记、用户与讨论提供 Koa API、MySQL 数据和 Redis 会话",
+      "homepage": "",
+      "topics": [
+        "koa",
+        "sequelize",
+        "mysql",
+        "redis",
+        "notes"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/Notesharea-admin",
+      "description": "查看用户与笔记、维护推荐内容的 Vue 管理前端",
+      "homepage": "",
+      "topics": [
+        "vue",
+        "element-plus",
+        "admin-dashboard",
+        "notes"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    },
+    {
+      "repo": "JackMeds/Notesharea-web",
+      "description": "阅读、创作与讨论笔记的 Vue 前端",
+      "homepage": "",
+      "topics": [
+        "vue",
+        "vite",
+        "notes",
+        "rich-text-editor"
+      ],
+      "socialPreview": "assets/brand/social-preview.png"
+    }
+  ],
+  "afterMingxuSwitch": {
+    "repo": "JackMeds/mingxu",
+    "homepage": "https://mingxu.jackmeds.top/",
+    "pinReplacement": "JackMeds/mingxu"
+  }
+}

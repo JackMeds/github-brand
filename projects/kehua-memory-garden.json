@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/kehua-memory-garden",
+  "wordmark": "Kehua Garden",
+  "displayName": "可话花园 / Kehua Garden",
+  "localName": "可话花园 / 让回忆重新有个住处",
+  "kind": "memory",
+  "category": "personal memories",
+  "accent": "#4D733E",
+  "accentDark": "#A9C88F",
+  "tagline": {
+    "en": "A quiet place for the things you kept.",
+    "zh": "在自己的浏览器里，重新翻看过去的日常。"
+  },
+  "tags": [
+    "memories",
+    "local files",
+    "static web"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "demo": "https://jackmeds.github.io/kehua-memory-garden/",
+    "source": "https://github.com/JackMeds/kehua-memory-garden"
+  },
+  "pilot": true,
+  "proof": "assets/brand/product-proof.png"
+}

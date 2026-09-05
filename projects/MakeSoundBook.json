@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/MakeSoundBook",
+  "displayName": "MakeSoundBook",
+  "wordmark": "MakeSoundBook",
+  "localName": "声音选区、合成与混音",
+  "category": "audio desktop",
+  "kind": "modules",
+  "accent": "#946322",
+  "accentDark": "#E2BB74",
+  "tagline": {
+    "en": "Turn selected text into a voiced story."
+  },
+  "tags": [
+    "electron",
+    "voices",
+    "ffmpeg"
+  ],
+  "readmes": [
+    "README.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/MakeSoundBook"
+  },
+  "pilot": false
+}

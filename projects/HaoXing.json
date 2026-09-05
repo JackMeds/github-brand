@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "repo": "JackMeds/HaoXing",
+  "displayName": "HaoXing",
+  "wordmark": "HaoXing",
+  "localName": "浩星 / 小说音频的全栈实验",
+  "category": "novel audio",
+  "kind": "modules",
+  "accent": "#79613E",
+  "accentDark": "#D4B78D",
+  "tagline": {
+    "en": "Novel audio experiments, from script to playback."
+  },
+  "tags": [
+    "web experiment",
+    "multi-voice",
+    "source"
+  ],
+  "readmes": [
+    "README.md",
+    "README.en.md"
+  ],
+  "links": {
+    "source": "https://github.com/JackMeds/HaoXing"
+  },
+  "pilot": false
+}

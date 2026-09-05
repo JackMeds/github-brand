@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-09-05",
+  "status": "drafts-prepared-not-merged",
+  "rendererRef": "078435fe0dc47d75d46e3faf96bd1d366c10d056",
+  "note": "Implementation checkpoints, not live settings. The toolkit checkpoint precedes this delivery index; its renderer remains pinned in target CI. Recheck current GitHub CI before merging.",
+  "entries": [
+    {
+      "unit": "toolkit",
+      "repo": "JackMeds/github-brand",
+      "pr": "https://github.com/JackMeds/github-brand/pull/1",
+      "branch": "brand/functional-specimen",
+      "base": "main",
+      "implementationRef": "078435fe0dc47d75d46e3faf96bd1d366c10d056"
+    },
+    {
+      "unit": "profile",
+      "repo": "JackMeds/JackMeds",
+      "pr": "https://github.com/JackMeds/JackMeds/pull/1",
+      "branch": "brand/functional-specimen",
+      "base": "main",
+      "implementationRef": "f5baefa00a8864c8019a09c5634db508177cf5e1"
+    },
+    {
+      "unit": "pilot",
+      "repo": "JackMeds/flowloud",
+      "pr": "https://github.com/JackMeds/flowloud/pull/2",
+      "branch": "brand/functional-specimen",
+      "base": "main",
+      "implementationRef": "06a6b9ce8a914c096113be40e6f284ce7af4a20f"
+    },
+    {
+      "unit": "pilot",
+      "repo": "JackMeds/BiliDigest",
+      "pr": "https://github.com/JackMeds/BiliDigest/pull/2",
+      "branch": "brand/functional-specimen",
+      "base": "main",
+      "implementationRef": "7f0eba5f047edcff7fec986e5fcd3b9fe18aeaaa"
+    },
+    {
+      "unit": "pilot",
+      "repo": "JackMeds/kehua-memory-garden",
+      "pr": "https://github.com/JackMeds/kehua-memory-garden/pull/1",
+      "branch": "brand/functional-specimen",
+      "base": "main",
+      "implementationRef": "a009d0345b19f08d493ebf3221bd2dad1ecf7810"
+    },
+    {
+      "unit": "preparation",
+      "repo": "JackMeds/sizhu-astro-ai",
+      "pr": "https://github.com/JackMeds/sizhu-astro-ai/pull/12",
+      "branch": "brand/mingxu-preparation",
+      "base": "main",
+      "implementationRef": "943685dab14773882aabb4c1080034767f89365e"
+    },
+    {
+      "unit": "cutover",
+      "repo": "JackMeds/sizhu-astro-ai",
+      "pr": "https://github.com/JackMeds/sizhu-astro-ai/pull/13",
+      "branch": "brand/mingxu-address-switch",
+      "base": "brand/mingxu-preparation",
+      "implementationRef": "7c254b03c13f5f8289cebc0c56e6be879a188d19",
+      "dependsOn": "https://github.com/JackMeds/sizhu-astro-ai/pull/12"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/MakeSoundBook",
+      "pr": "https://github.com/JackMeds/MakeSoundBook/pull/76",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "c865ec6d1fe4ec41ff7b25a925358197760b02cd"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/HaoXing",
+      "pr": "https://github.com/JackMeds/HaoXing/pull/14",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "459eb06d5b02d82992711781d3d5fb52178d733f"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/hideplayerheadblock",
+      "pr": "https://github.com/JackMeds/hideplayerheadblock/pull/1",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "90583f8970f5e7c493460a5fd443378a3cc2bf34"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/kehua-time-machine",
+      "pr": "https://github.com/JackMeds/kehua-time-machine/pull/1",
+      "branch": "codex/github-brand-readme",
+      "base": "gh-pages",
+      "implementationRef": "21e3af7f5cb904224b97755ee6b9a1163bdfe1f0"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/Notesharea-server",
+      "pr": "https://github.com/JackMeds/Notesharea-server/pull/40",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "49a48cd49c06c32c682188361699374627f23b14"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/Notesharea-admin",
+      "pr": "https://github.com/JackMeds/Notesharea-admin/pull/1",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "f04b4c3ddfea49b7073fa898866049187af9caf7"
+    },
+    {
+      "unit": "historical",
+      "repo": "JackMeds/Notesharea-web",
+      "pr": "https://github.com/JackMeds/Notesharea-web/pull/47",
+      "branch": "codex/github-brand-readme",
+      "base": "main",
+      "implementationRef": "1119efcde2e33fa88ed4bc33677faed513b2080d"
+    }
+  ]
+}

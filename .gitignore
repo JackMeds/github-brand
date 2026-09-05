@@ -4,3 +4,5 @@ coverage/
 .DS_Store
 .cache/
 backups/
+.playwright-cli/
+output/playwright/
