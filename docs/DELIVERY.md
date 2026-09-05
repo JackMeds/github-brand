@@ -2,6 +2,13 @@
 
 本轮交付的是可审阅的分支、素材、文档、中央工具和命序迁移代码；不是已上线的账号门面。所有业务变更保留为 Draft PR，没有自动合并，也没有修改头像、Bio、Pins、社交预览设置、线上域名或仓库名称。
 
+## 主页反馈修订 / 2026-09-05
+
+- 所有 Hero、社交图、轻量图形和主页标题移除固定项目编号；顺序不再烘焙进图片。项目 README 正文保持不变。
+- 主页新增四张同风格的 GitHub API 项目卡片：Stars、Forks、主要语言、最近推送、最新稳定 Release 日期。卡片有浅深色、采集时间、原生文字版和可点击的仓库入口。
+- 每 6 小时的 Actions 刷新流程随主页 PR 交付，合并前不会启用。只采集指定公开仓库，失败保留上次成功数据；不需要第三方统计服务或个人长期 Token。
+- 中央工具现有 16 项测试全部通过；本轮主页新增卡片在 GitHub 实页的 1280/390px × 浅深色四组检查均通过，桌面双列、手机单列，无横向溢出。14 个 PR 的本轮 CI 均成功且可合并，仍全部保持 Draft。
+
 ## 先看这一组
 
 - [主页实际 README](https://github.com/JackMeds/JackMeds/blob/brand/functional-specimen/README.md) · [主页 PR #1](https://github.com/JackMeds/JackMeds/pull/1)
@@ -19,7 +26,7 @@
 | 交付单元 | Draft PR | 内容与上线条件 |
 | --- | --- | --- |
 | 中央品牌工具 | [github-brand #1](https://github.com/JackMeds/github-brand/pull/1) | 原创 JM、规范、字体轮廓、生成/只读检查、回退基线、素材画廊 |
-| 个人主页 | [JackMeds #1](https://github.com/JackMeds/JackMeds/pull/1) | 精简中英介绍、四个作品条目，移除第三方统计卡；四试点验收后发布 |
+| 个人主页 | [JackMeds #1](https://github.com/JackMeds/JackMeds/pull/1) | 精简中英介绍、四个作品条目与自有 API 更新卡片；四试点验收后发布 |
 | Flowloud / 流声 | [flowloud #2](https://github.com/JackMeds/flowloud/pull/2) | 中英文独立 README、真实扩展工作区、安装入口与下沉技术文档 |
 | BiliDigest | [BiliDigest #2](https://github.com/JackMeds/BiliDigest/pull/2) | 最短成功路径、原英文入口、离线真实 CLI/Markdown 输出 |
 | 可话花园 | [kehua-memory-garden #1](https://github.com/JackMeds/kehua-memory-garden/pull/1) | 在线入口、导入路径、虚构记录的真实界面、英文摘要 |
@@ -37,9 +44,9 @@ HaoXing-BMS、HaoXing-server 两个归档仓库只记录状态；wx_key、echotr
 
 ## 已完成的验证
 
-- 中央工具 9 项回归测试通过；官方 npm audit 为 0。各项目无需引入生成器依赖。
+- 中央工具 16 项回归测试通过；官方 npm audit 为 0。各项目无需引入生成器依赖。
 - 12 个目标仓库的生成一致性、内部链接、语言入口检查通过。12 张社交 PNG 均为 1280×640、低于 1 MB；浅深 Hero 均为 1200×360。SVG 文字转为轮廓，不依赖访客字体。
-- macOS ARM 与 Linux x64 的真实 CI 暴露过波形小数差异，已固定坐标精度并加回归测试。各仓 CI 固定到渲染器提交 `268dd9dcc3702282dcce05647b929f2023f12f95`，不会随中央分支变化漂移。
+- macOS ARM 与 Linux x64 的真实 CI 暴露过波形小数差异，已固定坐标精度并加回归测试。各仓 CI 现固定到无编号与 API 卡片版本 `078435fe0dc47d75d46e3faf96bd1d366c10d056`，不会随中央分支变化漂移。
 - 主页手机端拥挤的三列表格已改成四段作品条目，原有入口保留。主页＋四试点在 GitHub 实际页面的 1280/390px × 浅色/深色共 20 组验证全部通过：图片加载、主题选图、全文无横向溢出、主要入口完整。截图和详细结果保存在本地忽略的 `output/playwright/proof-github-readmes/`、`proof-github-profile-recheck/`、`proof-github-pilots-recheck/` 中。
 - 四个产品证据均来自实际代码或界面，用虚构/离线示例并记录来源。Flowloud 不伪造配音完成状态；BiliDigest 的输出图明确为离线 CLI 证据；可话花园不使用私人记录；命序采用内置虚构命盘。
 - 命序原有及补充功能测试 96 项通过，类型检查和生产构建通过；迁移套件另有 27 项：10 项备份导入、8 项包/命令兼容、6 项 Worker 路由、3 项地址转换。跨来源浏览器演练验证备份、导入、重复/冲突/损坏数据与页面重载；WebMCP 原有浏览器测试通过。
@@ -53,7 +60,7 @@ HaoXing-BMS、HaoXing-server 两个归档仓库只记录状态；wx_key、echotr
 2. 命序先合并并部署兼容准备，验收原站 `/backup/` 和 `/migration/`，将上一版静态构建与设置快照保存在执行副本之外。
 3. 准备并核对 Cloudflare 权限、旧站恢复路由、新站 DNS/HTTPS 和 Pages 配置；将地址切换 PR 改为默认分支为基线，重新运行检查。仓库改名、执行副本 remote、Pages 与新站部署分别核验，不重新占用旧仓库名。
 4. 新站 HTTPS、页面、Agent 文档和跨域数据迁移验收通过后，才启用旧站普通路径的保留路径/查询参数 301；旧域名 `/migration/` 继续可访问。失败时保持/恢复 false readiness 和旧静态站点。
-5. 命序切换完成时，同步主页两处命序入口及中央 `projects/mingxu.json` 为新地址。旧恢复地址、引擎与存储标识、`mcp.jackmeds.top` 保持原值。
+5. 命序切换完成时，同步主页命序入口、主页 `profile-widgets.json` 的 API 仓库名及中央 `projects/mingxu.json` 为新地址，并重新采集卡片。旧恢复地址、引擎与存储标识、`mcp.jackmeds.top` 保持原值。
 6. 四试点验收后发布主页，按[待应用设置](../release/metadata.json)更新 JM 头像、Bio、Description、已验证 Website、Topics、社交预览和四个 Pins。导出的图片不会自动成为 GitHub 社交预览。
 7. 按顺序审阅并合并其余七个原创仓库轻量 PR，保留归档与 Fork 的原展示。
 
